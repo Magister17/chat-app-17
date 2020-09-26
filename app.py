@@ -1,6 +1,6 @@
 #----------------------------Main - Chat App----------------------------------#
 # Author:       Magister17
-# Version:      v1.0#
+# Version:      v1.0
 # GitHub URL:   https://github.com/Magister17/chat-app-17
 #-----------------------------------------------------------------------------#
 
@@ -15,3 +15,6 @@ from flask_socketio import SocketIO #, join_room, leave_room, send
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'vnkdjnfjknfl1232#'
 socketio = SocketIO(app)
+
+if __name__ == "main":
+    app.run(debug = True, host = "0.0.0.0")
